@@ -1,0 +1,102 @@
+<ion-header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Css -->
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
+  <title>Forms | Tailwind Admin</title>
+</ion-header>
+<ion-content>
+
+<!--Container -->
+<div class="mx-auto bg-grey-lightest">
+    <!--Screen-->
+    <div class="min-h-screen flex flex-col">
+        <!--Header Section Starts Here-->
+        <header class="bg-nav">
+            <div class="flex justify-between">
+                <div class="p-1 mx-3 inline-flex items-center">
+                    <i class="fas fa-bars pr-2 text-white" onclick="sidebarToggle()"></i>
+                    <h1 class="text-white p-2">Logo</h1>
+                </div>
+                <div class="p-1 flex flex-row items-center">
+
+                    <div id="ProfileDropDown" class="rounded hidden shadow-md bg-white absolute pin-t mt-12 mr-1 pin-r">
+                        <ul class="list-reset">
+                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">My account</a></li>
+                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Notifications</a></li>
+                          <li><hr class="border-t mx-2 border-grey-ligght"></li>
+                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--/Header-->
+
+        <div class="flex flex-1">
+            <!--Sidebar-->
+
+
+            <!--Main-->
+
+
+                <div class="flex flex-col">
+                    <!-- Card Sextion Starts Here -->
+
+                        <!--/Underline form-->
+                    </div>
+                    <!-- /Cards Section Ends Here -->
+
+                    <!--Grid Form-->
+
+
+                        <div class="mb-2 border-solid border-gray-300 rounded border shadow-sm w-full">
+
+                            <div  class="p-3">
+
+
+
+                              <img   style="width: 300px; height: 200px; margin: 10px auto 10px; margin-top: 20%;" src="https://i.pinimg.com/originals/c8/2c/8c/c82c8c4ff9352c4d2e559c35f21719ad.gif">
+
+
+                            </div>
+                            <div class="md:flex md:items-center">
+                              <div class="md:w-1/3"></div>
+                              <div class="md:w-2/3">
+                                  <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                                           type="button"  style="margin-left: 18% ;"
+                                           (click)="submit()">
+                                      He llegado a mi destino
+                                  </button>
+                              </div>
+                          </div>
+                        </div>
+
+
+                    <!--/Grid Form-->
+
+
+                </div>
+
+
+
+
+
+
+            <!--/Main-->
+        </div>
+        <!--Footer-->
+
+        <!--/footer-->
+
+    </div>
+
+
+
+<script src="./main.js"></script>
+
+
+
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Pedidos Combo Taxi
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pedidos</ion-title>
+
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <table class="table text-grey-darkest"  >
+                                    
+    <thead class="bg-grey-dark text-white text-normal">
+    <tr>
+        <th style="width: 200px;" scope="col">Fecha</th>
+        <th style="width: 200px;" scope="col">Hora</th>
+        <th style="width: 200px;" scope="col">Valor a Pagar</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of listaPedido | async">
+            <td>{{cliente.fecha}}</td>
+            <td>{{cliente.hora}}</td>
+            <td>{{cliente.valorPagar}}</td>
+            
+            <td>   
+            </td>
+            <td>   
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+</ion-content>
